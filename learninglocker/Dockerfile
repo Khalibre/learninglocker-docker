@@ -24,7 +24,7 @@ RUN apt-get update \
 USER node
 
 # Download release and extract it in /app
-RUN cd /tmp && curl --compressed -L -o "learninglocker-${LL_VERSION}.tar.gz" "https://github.com/LearningLocker/learninglocker/archive/${LL_VERSION}.tar.gz" \
+RUN cd /tmp && curl --compressed -L -o "learninglocker-${LL_VERSION}.tar.gz" "https://github.com/Khalibre/learninglocker/archive/${LL_VERSION}.tar.gz" \
   && tar -xzf "learninglocker-${LL_VERSION}.tar.gz" -C /app --strip-components 1 \
   && rm learninglocker-*.tar.gz
 
